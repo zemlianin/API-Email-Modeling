@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication5</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication5.Controllers.FullController">
+            <summary>
+            Контроллер отвечающий за все объекты
+            </summary>
+        </member>
+        <member name="M:WebApplication5.Controllers.FullController.CreateUserAndMessageRandom">
+            <summary>
+            Создание рандомных Юзеров и сообщений
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.FullController.RandomWord">
+            <summary>
+            Создание рандомного слова
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApplication5.Controllers.MessageController">
+            <summary>
+            Контроллер отвечающий за работу с сообщениями
+            </summary>
+        </member>
+        <member name="F:WebApplication5.Controllers.MessageController._messages">
+            <summary>
+            Лист сообщений
+            </summary>
+        </member>
+        <member name="M:WebApplication5.Controllers.MessageController.SendMessage(WebApplication5.Models.SendMessageRequest)">
+            <summary>
+            Генерация сообщений
+            </summary>
+            <param name="req">модельь сообщения</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.MessageController.GetMessagesBySenderAndReceiver(System.String,System.String)">
+            <summary>
+            Получение сообщения по отправителю и получателю
+            </summary>
+            <param name="senderEmail">имеил отправителя</param>
+            <param name="receiverEmail">имеил получателя</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.MessageController.GetMessagesBySender(System.String)">
+            <summary>
+            Поиск сообщения по отправителю
+            </summary>
+            <param name="senderEmail">имеил отправителя</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.MessageController.GetMessagesByReceiver(System.String)">
+            <summary>
+            Поиск сообщения по получателю
+            </summary>
+            <param name="receiverEmail">имеил получателя</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.MessageController.ReadJson">
+            <summary>
+            Метод дессериализации
+            </summary>
+        </member>
+        <member name="T:WebApplication5.Controllers.UserInfoController">
+            <summary>
+            контроллер юзеров
+            </summary>
+        </member>
+        <member name="F:WebApplication5.Controllers.UserInfoController._users">
+            <summary>
+            Лист юсеров
+            </summary>
+        </member>
+        <member name="M:WebApplication5.Controllers.UserInfoController.CreateUser(WebApplication5.Models.CreateUserRequest)">
+            <summary>
+            Метод создания юзера
+            </summary>
+            <param name="req">данные о юзере</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.UserInfoController.GetUserByEmail(System.String)">
+            <summary>
+            Поиск бзера по имейлу
+            </summary>
+            <param name="Email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.UserInfoController.GetAllUsers">
+            <summary>
+            Вывод всех юзеров
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5.Controllers.UserInfoController.ReadJson">
+            <summary>
+            Метод дессериалимзации
+            </summary>
+        </member>
+        <member name="T:WebApplication5.Models.CreateUserRequest">
+            <summary>
+            Модель юзера!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.CreateUserRequest.UserName">
+            <summary>
+            Имя юзера!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.CreateUserRequest.Email">
+            <summary>
+            Его имеил!
+            </summary>
+        </member>
+        <member name="T:WebApplication5.Models.MessageInfo">
+            <summary>
+            Собщение!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.MessageInfo.SenderEmail">
+            <summary>
+            Имеил отправителя!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.MessageInfo.ReceiverEmail">
+            <summary>
+            меил получателя!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.MessageInfo.Message">
+            <summary>
+            имеил получателя!
+            </summary>
+        </member>
+        <member name="T:WebApplication5.Models.SendMessageRequest">
+            <summary>
+            Модель сообщения
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.SendMessageRequest.SenderEmail">
+            <summary>
+            Имеил отправителя
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.SendMessageRequest.ReceiverEmail">
+            <summary>
+            Имеил получателя
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.SendMessageRequest.Message">
+            <summary>
+            Содержание
+            </summary>
+        </member>
+        <member name="T:WebApplication5.Models.UserInfo">
+            <summary>
+            Модель юзера!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.UserInfo.Email">
+            <summary>
+            имеил!
+            </summary>
+        </member>
+        <member name="P:WebApplication5.Models.UserInfo.UserName">
+            <summary>
+            Имя!
+            </summary>
+        </member>
+        <member name="M:WebApplication5.Models.UserInfo.CompareTo(WebApplication5.Models.UserInfo)">
+            <summary>
+            
+            </summary>
+            <param name="message">собщение для сравнения</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
