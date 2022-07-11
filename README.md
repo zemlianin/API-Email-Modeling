@@ -11,4 +11,4 @@
 json сериализацию и дессериализацию в файл внутри проекта. Поиск сообщений по заданному email происходит с использованием библиотеки System.Linq
 ## Технологии
 + [WEB-API ASP.NET](https://docs.microsoft.com/ru-ru/aspnet/web-api/)
-+ [JSON](https://docs.microsoft.com/ru-ru/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0]
++ [JSON](https://docs.microsoft.com/ru-ru/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0)
