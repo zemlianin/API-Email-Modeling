@@ -9,6 +9,8 @@
 ## Реализация
 Проект сделан с помощью фреймоврка ASP.NET, отправка и получение сообщений происходит через 
 json сериализацию и дессериализацию в файл внутри проекта. Поиск сообщений по заданному email происходит с использованием библиотеки System.Linq
+Также, для упрощения запуска приложения на различных устройствах, в приложении реализован запуск через докер контейнер
 ## Технологии
 + [WEB-API ASP.NET](https://docs.microsoft.com/ru-ru/aspnet/web-api/)
 + [JSON](https://docs.microsoft.com/ru-ru/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-6-0)
++ [Docker](https://www.docker.com/)
